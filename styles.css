@@ -231,3 +231,51 @@ body{
     }
     
 }
+
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--light-gray);
+    padding: 1.5rem 3rem;
+    gap: 4rem;
+    border: none;
+    border-radius: 0.625rem;
+    margin-bottom: 5rem;
+    animation: slideFromLeft 0.1s ease forwards;
+}
+
+.company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.svg-img{
+    height: 1.2rem;
+    background-color: var(--light-gray);
+}
+
+.logo-txt{
+    font-size: 1rem;
+}
+
+@media screen and (min-width:780px){
+    .company-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .company-title{
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+}
